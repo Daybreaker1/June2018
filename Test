@@ -1,0 +1,7 @@
+function emailSummary() {
+ var file = DriveApp.getFileById('1SQvC_ZL8nU1Vd0C3fUZi14Ez4NWl2wpYDyCnnUZI6gA')
+ MailApp.sendEmail("tim@daybreaker.com", "test", "test1", {
+    name: 'TBD', 
+    attachments: [file.getAs(MimeType.PDF)] 
+});
+}
